@@ -41,7 +41,7 @@ Como parte de la **Oficina de Producción**, el enfoque principal fue la creaci�
 ---
 
 ## 👤 Autor
-**Tu Nombre / Oficina de Producción** *Diseñadora y Desarrolladora Frontend*
+**Cristina Kauffman / Oficina de Producción** *Diseñadora y Desarrolladora Frontend*
 
 ---
 *Proyecto desarrollado con fines educativos y de preservación de la fauna regional.*
