@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia: CEADI Educa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <section id="start-screen">
+            <h1 style="color: #00796b;">CEADI Educa</h1>
+            <div class="logo-container">
+                <img src="img/logo-inicio.png" alt="Logo" style="width: 150px;">
+            </div>
+            <p>Aprende sobre nuestra fauna y suma puntos.</p>
+            <button class="btn-main" onclick="startGame()">¡EMPEZAR A JUGAR!</button>
+        </section>
+
+        <section id="quiz-section" style="display: none;">
+            <header class="game-header">
+                <p>Puntos: <span id="score">0</span></p>
+                <p id="level-indicator">Nivel 1</p>
+            </header>
+
+            <div id="image-container">
+                <div id="image-placeholder">?</div>
+                <img id="fish-image" src="" alt="Pez">
+            </div>
+
+            <div id="feedback-message"></div>
+            <h2 id="question">Cargando...</h2>
+            
+            <div id="options-container"></div>
+            
+            <button id="btn-next" class="btn-next" style="display: none;" onclick="next()">CONTINUAR ➡️</button>
+
+            <div class="chat-area">
+                <div id="chat-window"></div>
+                <button class="btn-chat" onclick="getHelp()">Pista del Guía 💬</button>
+            </div>
+        </section>
+
+       <section id="result-screen" style="display: none;">
+    <h1 id="result-title">¡Juego Terminado!</h1>
+    
+    <div id="medal-container" style="margin: 20px 0; min-height: 120px;">
+        </div>
+
+        <section id="level-up-screen" style="display: none;">
+    <h1 style="color: #ffb300; font-size: 3rem;">¡NIVEL 1<br>COMPLETO!</h1>
+    <div class="level-badge">
+        <img src="img/logo-inicio.png" alt="Logro" style="width: 120px; filter: drop-shadow(0 0 10px gold);">
+    </div>
+    <p style="font-size: 1.2rem; margin: 20px 0;">Has demostrado conocer los peces superficiales.<br><b>¿Te animas a las Aguas Profundas?</b></p>
+    <button class="btn-main" onclick="startLevel2()">INGRESAR AL NIVEL 2 🌊</button>
+</section>
+
+    <div id="final-score-display" style="font-size: 3em; color: #ffb300; margin: 10px 0;">0</div>
+    <p id="result-text">Has completado el desafío educativo.</p>
+    
+    <button class="btn-main" onclick="resetGame()">VOLVER A JUGAR 🔄</button>
+</section>
+</div>
+</section>
+    </div>
+
+    <audio id="sound-success" src="sounds/acierto.mp3"></audio>
+    <audio id="sound-error" src="sounds/error.mp3"></audio>
+    <audio id="ambient-river" src="sounds/rio-parana.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
