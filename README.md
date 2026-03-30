@@ -1,4 +1,3 @@
-# CEADI-Educa-trivia
 # 🐟 Trivia: CEADI Educa
 
 ¡Bienvenido a **CEADI Educa**, una experiencia educativa interactiva diseñada para conocer la fauna ictícola de nuestra región! 🌊
